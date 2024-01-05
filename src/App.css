@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center; 
+  align-content: center;  
+  text-shadow: 4px 9px 11px black;
+}
+
+.SearchPlaces{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #A367B1;
+  padding: 1vw;
+  border-bottom: 3px solid rgb(120, 61, 61);
+}
+form> input{
+  padding: 2.3vw 8vw;
+  border-radius : 13vw;
+  outline: none;
+  border: none;
+  font-size: 4vw;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-indent: 4vw;
+} 
+
+form > button{
+  font-size: 1.7vh;
+  margin-left: 1vw;
+  padding: 3vw 3vw;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+}
+button:hover{
+  cursor: pointer;
+  background-color:black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.weatherImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10vh;
+  padding: 0rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weatherImage > img {
+  opacity: 0.4;
+  height: 14vh;
+  border-radius: 50%;
+  box-shadow:  5px 7px 9px black;
+
+}
+.weatherDetails{
+  display: flex;
+  flex-direction : column; 
+  align-items: center;
+  margin-top: 4vh;
+  margin-bottom: 9vh;
+}
+@font-face {
+  font-family: super;
+  src: url("./font/Arizona.ttf");
+}
+.weatherDetails > :first-child{
+  font-size: 10vw;
+  margin-bottom: 3vh ;
+  font-family:super ; 
+}
+
+.weatherDetails > :last-child{
+  font-size: 5vw;
+  font-family: super ;
+}
+
+.box1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.humidity{
+   height: 12vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+@font-face {
+  font-family: Coalition;
+  src: url("./font/Coalition_v2..ttf");
+}
+
+@font-face {
+  font-family: light;
+  src: url("./font/Neurock.otf");
+}
+.humidity > :first-child{
+  font-size: 5vw;
+  text-align: center;
+  height: 25%;
+  font-family: Coalition;
+  margin-bottom: 1.5vw;
+}
+.humidity > :last-child{
+  font-size: 5vw;
+  font-family: light;
+
+  
+}
+
+.hum > i{
+  margin-right: 3vw;
+}
+.windSpeed{
+  height: 12vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.windSpeed > :first-child{
+ font-size: 5vw;
+ text-align: center;
+ height: 25%;
+ font-family: Coalition;
+ margin-bottom: 1.5vw;
+}
+.speed > i{
+  margin-right: 2vw;
+  font-size: 4.7vw;
+}
+
+.windSpeed > :last-child{
+ font-size: 5vw;
+ font-family: light;
+
+
 }
